@@ -5,7 +5,9 @@ import mongoose from 'mongoose'
 import bcrypt from 'bcrypt'
 import { User } from './Models'
 
-const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/FinalProject-users"
+require('dotenv').config()
+
+const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/final-project-users"
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.Promise = Promise
 
