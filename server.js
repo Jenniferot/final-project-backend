@@ -3,7 +3,7 @@ import bodyParser from 'body-parser'
 import cors from 'cors'
 import mongoose from 'mongoose'
 
-const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/users"
+const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/final-project-users"
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.Promise = Promise
 
