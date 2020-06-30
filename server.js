@@ -7,7 +7,7 @@ import { User } from './Models'
 
 require('dotenv').config()
 
-const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/final-project-users"
+const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/FinalProject-users"
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.Promise = Promise
 
